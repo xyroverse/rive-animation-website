@@ -1,6 +1,47 @@
-# rive-animation-website
+# Rive Animation Website
 
-This repository contains the Rive animation files for Xyro, LLC branded logo animations.
+This repository contains the Rive animation files for Xyro, LLC branded logo animations hosted publicly for website to have direct access.
+
+## Installation
+
+Clone this repo using the following git url:
+
+```text
+https://github.com/xyroverse/rive-animation-website.git
+```
+
+Clone this repo using the GitHub CLI gh repo clone xyroverse/rive-animation-website:
+
+```text
+gh repo clone xyroverse/rive-animation-website
+```
+
+Embed Rive animation in a web page using the specific file's permalink:
+
+```html
+<div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; overflow: hidden">
+<canvas id="canvas" style="display: flex; width: 100%; height: 100%; overflow: hidden;"></canvas>
+</div>
+<script src="https://unpkg.com/@rive-app/canvas@2.19.6"></script>
+<script>
+      const r = new rive.Rive({
+  src: "https://raw.githubusercontent.com/xyroverse/rive-animation-website/5376c095437d874f1e53d67116aed25797baef9f/xyro_logo_anim_letters_bounce_in.riv",
+  canvas: document.getElementById("canvas"),
+  stateMachines: "State Machine 3",
+  autoplay: true,
+  onLoad: () => {
+    r.resizeDrawingSurfaceToCanvas();
+    const canvas = document.getElementById("canvas");
+    canvas.addEventListener("click", () => {
+      const input = r.stateMachineInputs("State Machine 3").find(i => i.name === "OnClick");
+      if(input) {
+        input.fire();
+      }
+    });
+  }
+});
+</script>
+```
 
 ## License
 
