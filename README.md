@@ -43,6 +43,18 @@ Embed Rive animation in a web page using the specific file's permalink:
 </script>
 ```
 
+## Packages
+
+This repo utilizes the animation technologies via Rive:
+
+[https://rive.app/](https://rive.app/)
+
+This repo utilizes the Rive package:
+
+- [ ] npm i @rive-app/canvas
+
+[https://github.com/rive-app/rive-wasm/tree/master](https://github.com/rive-app/rive-wasm/tree/master)
+
 ## License
 
 This animation is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/.
