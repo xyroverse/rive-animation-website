@@ -21,14 +21,14 @@ gh repo clone xyroverse/rive-animation-website
 ### Xyro Animations
 
 Xyro Icon:
-`xyro_logo_anim_letters_bounce_in.riv'
+`xyro_logo_anim_letters_bounce_in.riv`
 
 Xyro Logo:
-`xyro_logo_anim_all_text_slideup.riv'
-`xyro_logo_anim_letters_bounce_in.riv'
+`xyro_logo_anim_all_text_slideup.riv`
+`xyro_logo_anim_letters_bounce_in.riv`
 
 Xyro Horizontal Logo:
-`xyro_logo_anim_letters_bounce_in.riv'
+`xyro_logo_anim_letters_bounce_in.riv`
 
 ### Embed into Web Page
 
